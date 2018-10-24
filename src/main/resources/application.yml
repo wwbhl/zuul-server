@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.0.0.2:8761/eureka/
+      defaultZone: http://admin:admin123@10.0.0.2:8761/eureka/
 server:
   port: 8766
 spring:
@@ -13,5 +13,5 @@ zuul:
       path: /say-hello-service/**
       serviceId: say-hello-service
     greeting:
-      path: /greeting-service/**
-      serviceId: greating-service
+      path: /greating-service/**
+      serviceId: config-client
